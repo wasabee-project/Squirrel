@@ -1,0 +1,28 @@
+{
+    "name": "squirrel",
+    "url": "https://server.wasabee.rocks/static/dev/",
+    "headers": {
+        "common": {
+            "id": "__SKIN_NAME__-Wasabee-Skin",
+            "name": "__SKIN_NAME__",
+	    "namespace": "https://wasabee.rocks/",
+            "downloadURL": "__URL__/__SKIN_NAME__-wasabee-skin.user.js",
+            "updateURL": "__URL__/__SKIN_NAME__-wasabee-skin.meta.js",
+            "description": "__SKIN_NAME__ skin for Wasabee",
+            "author": "Wasabee Project Team",
+            "category": "Other",
+            "include": "/https?:\\/\\/.*\\.ingress\\.com\\/?((intel|mission)?(\\/?(\\?|#).*)?)?/",
+            "version": "0.0.0",
+	    "grant": "none"
+        }
+    },
+    "releaseFolder": {
+        "prod": "./releases/prod/"
+    },
+    "src": {
+        "plugin": "./src/main.js",
+        "meta": "./src/headers.js"
+    },
+    "pluginName": "__SKIN_NAME__-wasabee-skin.user.js",
+    "metaName": "__SKIN_NAME__-wasabee-skin.meta.js"
+}
