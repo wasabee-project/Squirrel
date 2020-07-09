@@ -31,13 +31,14 @@ skin.static = {
 
 // define any languages added by this skin here
 // if the language name is the same as the skin name it will be activated when the skin is selected
+skin.static.strings = {};
 skin.static.strings.squirrel = require("./strings.json");
 
 // define the images for markers here
 // the file name does not matter so long as the window.plugin.wasabee.static.constant.XXX and property names are untouched
 skin.static.markerTypes = new Map([
   [
-    window.plugin.wasabee.static.constants.MARKER_TYPE_CAPTURE,
+    "CapturePortalMarker",
     {
       markerIcon: require("./images/wasabee_markers_capture_pending.png"),
       markerIconAssigned: require("./images/wasabee_markers_capture_assigned.png"),
@@ -46,7 +47,7 @@ skin.static.markerTypes = new Map([
     }
   ],
   [
-    window.plugin.wasabee.static.constants.MARKER_TYPE_DECAY,
+    "LetDecayPortalAlert",
     {
       markerIcon: require("./images/wasabee_markers_decay_pending.png"),
       markerIconAssigned: require("./images/wasabee_markers_decay_assigned.png"),
@@ -55,7 +56,7 @@ skin.static.markerTypes = new Map([
     }
   ],
   [
-    window.plugin.wasabee.static.constants.MARKER_TYPE_DESTROY,
+    "DestroyPortalAlert",
     {
       markerIcon: require("./images/wasabee_markers_destroy_pending.png"),
       markerIconAssigned: require("./images/wasabee_markers_destroy_assigned.png"),
@@ -64,7 +65,7 @@ skin.static.markerTypes = new Map([
     }
   ],
   [
-    window.plugin.wasabee.static.constants.MARKER_TYPE_FARM,
+    "FarmPortalMarker",
     {
       markerIcon: require("./images/wasabee_markers_farm_pending.png"),
       markerIconAssigned: require("./images/wasabee_markers_farm_assigned.png"),
@@ -73,7 +74,7 @@ skin.static.markerTypes = new Map([
     }
   ],
   [
-    window.plugin.wasabee.static.constants.MARKER_TYPE_GOTO,
+    "GotoPortalMarker",
     {
       markerIcon: require("./images/wasabee_markers_goto_pending.png"),
       markerIconAssigned: require("./images/wasabee_markers_goto_assigned.png"),
@@ -82,7 +83,7 @@ skin.static.markerTypes = new Map([
     }
   ],
   [
-    window.plugin.wasabee.static.constants.MARKER_TYPE_KEY,
+    "GetKeyPortalMarker",
     {
       markerIcon: require("./images/wasabee_markers_key_pending.png"),
       markerIconAssigned: require("./images/wasabee_markers_key_assigned.png"),
@@ -91,7 +92,7 @@ skin.static.markerTypes = new Map([
     }
   ],
   [
-    window.plugin.wasabee.static.constants.MARKER_TYPE_LINK,
+    "CreateLinkAlert",
     {
       markerIcon: require("./images/wasabee_markers_link_pending.png"),
       markerIconAssigned: require("./images/wasabee_markers_link_assigned.png"),
@@ -100,7 +101,7 @@ skin.static.markerTypes = new Map([
     }
   ],
   [
-    window.plugin.wasabee.static.constants.MARKER_TYPE_MEETAGENT,
+    "MeetAgentPortalMarker",
     {
       markerIcon: require("./images/wasabee_markers_meetagent_pending.png"),
       markerIconAssigned: require("./images/wasabee_markers_meetagent_assigned.png"),
@@ -109,7 +110,7 @@ skin.static.markerTypes = new Map([
     }
   ],
   [
-    window.plugin.wasabee.static.constants.MARKER_TYPE_OTHER,
+    "OtherPortalAlert",
     {
       markerIcon: require("./images/wasabee_markers_other_pending.png"),
       markerIconAssigned: require("./images/wasabee_markers_other_assigned.png"),
@@ -118,7 +119,7 @@ skin.static.markerTypes = new Map([
     }
   ],
   [
-    window.plugin.wasabee.static.constants.MARKER_TYPE_RECHARGE,
+    "RechargePortalAlert",
     {
       markerIcon: require("./images/wasabee_markers_recharge_pending.png"),
       markerIconAssigned: require("./images/wasabee_markers_recharge_assigned.png"),
@@ -127,7 +128,7 @@ skin.static.markerTypes = new Map([
     }
   ],
   [
-    window.plugin.wasabee.static.constants.MARKER_TYPE_UPGRADE,
+    "UpgradePortalAlert",
     {
       markerIcon: require("./images/wasabee_markers_upgrade_pending.png"),
       markerIconAssigned: require("./images/wasabee_markers_upgrade_assigned.png"),
@@ -136,7 +137,7 @@ skin.static.markerTypes = new Map([
     }
   ],
   [
-    window.plugin.wasabee.static.constants.MARKER_TYPE_VIRUS,
+    "UseVirusPortalAlert",
     {
       markerIcon: require("./images/wasabee_markers_virus_pending.png"),
       markerIconAssigned: require("./images/wasabee_markers_virus_assigned.png"),
@@ -145,7 +146,7 @@ skin.static.markerTypes = new Map([
     }
   ],
   [
-    window.plugin.wasabee.static.constants.MARKER_TYPE_EXCLUDE,
+    "ExcludeMarker",
     {
       markerIcon: require("./images/wasabee_markers_exclude_pending.png"),
       markerIconAssigned: require("./images/wasabee_markers_exclude_assigned.png"),
