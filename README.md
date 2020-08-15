@@ -1,19 +1,24 @@
-CrystalWizard will fill this in....
+# Wasabee Skins
 
-Step 1:
-npm install
+## Dependencies
+You need to install nodes/npm and download/clone this repository
 
-Step 2:
-edit the following files:
-plugin.config.json -- only the name and url need to be changed, and maybe the version
-src/code/static.js -- if you need to adjust any file names, do it here
-src/code/css/main.css -- the CSS file
-src/code/images/ -- these are the image files available for you to change
-src/code/strings.json -- the langauge pack for the skin
+    npm install
 
-Step 3:
-npx gulp
+## Configuration
 
-Step 4:
-install, test, go back to step 2... repeat until perfect
+Edit the following files:
+
+ - `plugin.config.json`: only the name and url need to be changed, and maybe the version
+ - `src/code/static.js`: to specify the css to load, custom strings, layer colors...
+ - `src/code/css/`: prefer adding css inside this folder
+ - `src/code/images/`: place to put images you use inside CSS
+ - `src/code/strings/`: place to put language packs for the skin
+
+## Build
+    npx gulp
+
+## Install
+
+The skin is in `release/prod/SKIN-wasabee-skin.user.js`.
 
